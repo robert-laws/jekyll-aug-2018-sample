@@ -4,5 +4,5 @@ layout: default
 <p>Website home page</p>
 
 {% for post in site.posts %}
-  <p><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></p>
+  <p><a href="{{post.url | relative_url}}">{{post.title}}</a></p>
 {% endfor %}
