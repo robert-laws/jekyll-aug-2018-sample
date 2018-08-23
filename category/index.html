@@ -1,0 +1,10 @@
+---
+title: Category List
+layout: page
+---
+
+<div style="margin: 20px 0;">
+{% for category in site.categories %}
+  <p><a href="{{site.baseurl}}{{category | first}}">{{category | first}}</a></p>
+{% endfor %}
+</div>

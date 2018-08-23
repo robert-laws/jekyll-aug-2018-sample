@@ -19,4 +19,6 @@ defaults:
 # Build settings
 markdown: kramdown
 
+excerpt_separator: <!--more-->
+
 exclude: [Gemfile, Gemfile.lock, README.md]
