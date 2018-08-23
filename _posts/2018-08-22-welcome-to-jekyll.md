@@ -2,7 +2,7 @@
 title:  "Welcome to Jekyll!!!"
 date:   2018-08-23 14:34:00 +0300
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. <!--more-->You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 ![Mountain Landscape]({{ "/images/m1.png" | absolute_url }}){:width="350px"}
 
