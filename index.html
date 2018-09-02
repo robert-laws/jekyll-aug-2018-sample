@@ -8,3 +8,13 @@ layout: default
   <p>{{post.excerpt}}</p>
   <hr>
 {% endfor %}
+
+
+
+<h4>
+{% for col in site.collections %}
+  {% for item in col.docs %}
+    {{item.collection}}
+  {% endfor %}
+{% endfor %}
+</h4>

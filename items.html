@@ -1,0 +1,31 @@
+---
+layout: default
+title: All Items
+permalink: /items/
+---
+<h1>{{page.title}}</h1>
+
+<ul>
+  {% for item in site.items %}
+    <li>
+      <a href="#{{item.title | downcase}}">{{item.title}}</a>
+    </li>
+  {% endfor %}
+</ul>
+<hr>
+
+<p style="margin: 450px 0;">---</p>
+
+{% assign all_items = site.items | sort: "order" %}
+
+<section>
+  {% for item in all_items %}
+    <article>
+      <header>
+        <a name="{{item.title | downcase}}"></a>
+        <h2>{{item.title}}</h2>
+        {{item.content}}
+      </header>
+    </article>
+  {% endfor %}
+</section>

@@ -16,6 +16,13 @@ defaults:
     values:
       layout: "post"
 
+collections_dir: my_collections
+
+collections:
+  items:
+    output: true
+    permalink: /:collection/:name
+
 # Build settings
 markdown: kramdown
 
