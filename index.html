@@ -9,6 +9,7 @@ layout: default
   <hr>
 {% endfor %}
 
+<<<<<<< HEAD
 
 
 <h4>
@@ -18,3 +19,10 @@ layout: default
   {% endfor %}
 {% endfor %}
 </h4>
+=======
+{% assign img_files = site.static_files | where: "image", true %}
+
+{% for img in img_files %}
+  <strong>{{img.path}}{% unless forloop.last%},{% endunless %}</strong>
+{% endfor %}
+>>>>>>> d2673752fd89832cbe44eb343db3cb85e78ba18a
